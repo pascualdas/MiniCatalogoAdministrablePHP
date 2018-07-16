@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	box-sizing:border-box;
+	background-color:#F5F5F5;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+#cuerpoAdministracion{
+	min-height:500px;
+}
+
+#centroCuerpo {
+	position:relative;
+}
+
+#centroCuerpo #imgCentral {
+	position: absolute;
+	top: 1000%;
+	left: 50%;
+	height: 80%;
+	width: 50%;
+	margin: -15% 0 0 -25%;
+}
+
+
+
+#imgCentral{
+}
+
+.inicioSesionContenedor {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divContenedorFormilaroCentro{
+	padding:50px; 
+	border:1px solid #CECECE;
+}
+
+.capa_inicioSesion {
+	margin-top:10%;
+ 	width: 50%;
+  	text-align:center;
+}
+
+
+body .capa_inicioSesion #tabla_login{
+	width:70%;
+	border:1px #CCCCCC solid;
+	padding:10px;
+	border-radius:5px;
+	background-color:#FFF;
+}
+
+#tabla_login{
+	box-shadow:#C0C0C0 2px 5px 20px;
+}
+
+
+#btnIngresar{
+	margin:20px;
+	background-color:#FF1717;
+	border-radius:5px;
+	color:#FFF;
+	padding:8px;
+	width:60%;
+}
+
+#btnIngresar:hover{
+	background-color:#FF5353;
+}
+
+#tblContenedorFormulario{
+	width:100%;
+}
+
+.fondoLetraBlanca {
+	background-color:#FF1717;
+	font:#FFF;
+}
+
+.fondo{
+	background-color:#FF1717;
+}
+
+/*  MediaQueries que permiten adoptar un estilo 
+	dependiendo del tamaño de la pantalla
+	pantalla < 1200px
+*/
+@media only screen and (max-width : 1200px){  
+
+#centroCuerpo .tblContenedorFormulario{
+	width:95%;
+	/* background-color:red; */
+}
+
+} 
+
+@media only screen and (min-width : 1201px) and (max-width : 2400px){
+
+#centroCuerpo .tblContenedorFormulario{
+	width:60%;
+	/* background-color:green; */
+}
+
+} 
